@@ -11,7 +11,7 @@ class Comentario extends Model{
     }
     static associate(models){
         this.belongsTo(models.Postagem);
-        this.belongsTo(models.Alunos);
+        this.belongsTo(models.Aluno,{foreignKey: "aluno_id"});
     }
 }
 module.exports = Comentario;

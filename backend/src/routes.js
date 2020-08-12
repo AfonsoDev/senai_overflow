@@ -14,5 +14,6 @@ routes.get("/postagens",postagemController.index);
 routes.post("/postagens",postagemController.store);
 routes.delete("/postagens/:id",postagemController.delete);
 //Rotas de comentarios
+routes.get("/postagens/:postId/comentarios",comentarioController.index);
 routes.post("/postagens/:postId/comentarios",comentarioController.store);
 module.exports = routes;
