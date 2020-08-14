@@ -14,8 +14,9 @@ module.exports = {
         res.send(postagens);
     },
     async store(req,res){
+        //pegar id do aluno logado
         const token = req.headers.authorization;
-        const [bearer, created_aluno_id] = token.split(" ");
+        const created_aluno_id = req.alunoId;
         const { titulo, descricao, imagem, gists } = req.body;
 
         try {
