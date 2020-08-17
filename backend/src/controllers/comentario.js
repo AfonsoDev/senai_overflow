@@ -23,8 +23,7 @@ module.exports={
     //Implementar a inserção de comentarios
     async store(req, res) {
         //recuperar o id do aluno
-        const token = req.headers.authorization;
-        const [Bearer, alunoId] = token.split(" ");
+        const alunoId = req.alunoId;
         //recuperar o id da postagem
         const { postId } = req.params;
         //recuperar a descricao do comentario

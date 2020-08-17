@@ -15,8 +15,8 @@ module.exports = {
     },
     async store(req,res){
         //pegar id do aluno logado
-        const token = req.headers.authorization;
         const created_aluno_id = req.alunoId;
+        
         const { titulo, descricao, imagem, gists } = req.body;
 
         try {
@@ -38,8 +38,8 @@ module.exports = {
     },
     async delete(req,res){
         //pegando o id do aluno que esta logado 
-        const token = req.headers.authorization;
-        const [bearer, created_aluno_id] = token.split(" ");
+        const created_aluno_id = req.alunoId;
+
         //pegando o id a ser apagado
         const {id} = req.params;
         //procura o post pelo id
