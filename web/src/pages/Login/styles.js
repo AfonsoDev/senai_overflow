@@ -14,7 +14,8 @@ export const ImageCropped = styled.div`
     width: 100%;
     max-width: 580px;
     min-width: 100px;
-    height: 80%;
+    height: 90%;
+    min-height: 500px;
     max-height: 700px;
     overflow: hidden;
     border: 1px solid var(--white); 
@@ -28,8 +29,8 @@ export const ImageCropped = styled.div`
 export const Form = styled.form`
     width:100%;
     max-width: 400px;
-    height: 80%;
-
+    height: 90%;
+    min-height: 500px;
     border: 1px solid var(--white);
     border-radius: 0px 10px 10px 0px;
     border-left: 0px;
