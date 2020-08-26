@@ -15,7 +15,7 @@ module.exports={
             association: "Aluno",
             attributes:["id", "nome"],
         },  
-        attributes:["id", "descricao"],
+        attributes:["id", "descricao", "created_at"],
        });
 
        res.send(comentarios);
